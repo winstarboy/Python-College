@@ -1,0 +1,30 @@
+from array import array
+a=array('i',range(3))
+x=int(input("Enter a 3 digit number:"))
+a[0]=int(x/100)
+a[1]=int(x/10)%10
+a[2]=int(x%10)
+for i in range(0,len(a)):
+    if a[i]==0:
+     print("zero")
+    elif a[i]==1:
+     print("one")
+    elif a[i]==2:
+     print("two")
+    elif a[i]==3:
+     print("three")
+    elif a[i]==4:
+     print("four")
+    elif a[i]==5:
+     print("five")
+    elif a[i]==6:
+     print("six")
+    elif a[i]==7:
+     print("seven")
+    elif a[i]==8:
+     print("eight")
+    else:
+     print("nine")
+
+
+

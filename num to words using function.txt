@@ -1,0 +1,30 @@
+def text_eq(x):
+    if x==0:
+        y="zero"
+    elif x==1:
+        y="one"
+    elif x==2:
+        y="two"
+    elif x==3:
+        y="three"
+    elif x==4:
+        y="four"
+    elif x==5:
+        y="five"
+    elif x==6:
+        y="six"
+    elif x==7:
+        y="seven"
+    elif x==8:
+        y="eight"
+    else:
+        y="nine"
+    return y
+
+i=int(input("Enter a 3 digit num: "))
+d1=int(i%10)
+print(text_eq(d1))
+d2=int(i/10%10)
+print(text_eq(d2))
+d3=int(i/100)
+print(text_eq(d3))
