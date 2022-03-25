@@ -1,0 +1,276 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+
+aa=float(input("Enter the First Number:"))
+bb=float(input("Enter the Second Number:"))
+print ("The Addition of ",aa," and ",bb," is: ",int((aa+bb)))
+print ("The Subtraction of ",aa," and ",bb," is: ",int((aa-bb)))
+print ("The Multiplication of ",aa," and ",bb," is: ",int((aa*bb)))
+print ("The Division of ",aa," and ",bb," is: ",int((aa/bb)))
+print ("The Modulus of ",aa," and ",bb," is: ",int((aa%bb)))
+
+
+# In[13]:
+
+
+aa=float(input("Enter the First Number:"))
+bb=float(input("Enter the Second Number:"))
+print (aa," + ",bb," is: ",(aa+bb))
+print ("The Subtraction of ",aa," and ",bb," is: ",(aa-bb))
+print ("The Multiplication of ",aa," and ",bb," is: ",(aa*bb))
+print ("The Division of ",aa," and ",bb," is: ",(aa/bb))
+print ("The Modulus of ",aa," and ",bb," is: ",(aa%bb))
+
+
+# In[14]:
+
+
+aa=int(input("Enter the First Number:"))
+bb=int(input("Enter the Second Number:"))
+print (aa," + ",bb," is: ",(aa+bb))
+print ("The Subtraction of ",aa," and ",bb," is: ",(aa-bb))
+print ("The Multiplication of ",aa," and ",bb," is: ",(aa*bb))
+print ("The Division of ",aa," and ",bb," is: ",(aa/bb))
+print ("The Modulus of ",aa," and ",bb," is: ",(aa%bb))
+
+
+# In[18]:
+
+
+a=int(input("Enter the height of Person A in cm(s):\t"))
+b=int(input("Enter the height of Person  B in cm(s):\t"))
+if(a>b): 
+    print("A is Taller than B")
+else:
+    print("B is taller than A")
+
+
+# In[29]:
+
+
+a=int((input("Enter Your marks:\t")))
+if(a>90):
+    print ("Distinction")
+elif (a>75 and a<90 ): 
+    print("First Class")
+else:print("Second Class")
+
+
+# In[2]:
+
+
+income=int(input("Enter the Income per Annum:  "))
+s1=income*0
+s2= ((income-200000)*(10/100))
+s3= 20000+((income-400000)*(20/100))
+s4= 60000+((income-600000)*(40/100))
+if income<200000 : 
+    it=s1
+    print(it)
+elif income <400000 and income>200000 : 
+    it=s2
+    print(it)
+elif income <600000 and income>400000 : 
+    it=s3
+    print(it)
+else : 
+    it=s4
+    print(it)
+
+
+# In[10]:
+
+
+a=[]
+b=[]
+n=int(input("Enter Total no. of. Students"))
+
+for i in range(0,n+1) :
+    dno=input("Enter the name of the Student: ")
+    a.append(dno)
+    dob=input("Enter the Date of Birth: ")
+    a.append(dob)
+    fn=input("Enter the father name: ")
+    a.append(fn)
+    score=input("Enter the Score: ")
+    a.append(score)
+    b.append(a)
+print(b)
+    
+    
+
+
+# In[11]:
+
+
+a=[]
+
+n=int(input("Enter Total no. of. Students"))
+
+for i in range(0,n) :
+    dno=input("Enter the name of the Student: ")
+    a.insert(0,dno)
+    dob=input("Enter the Date of Birth: ")
+    a.insert(1,dob)
+    fn=input("Enter the father name: ")
+    a.insert(2,fn)
+    score=input("Enter the Score: ")
+    a.insert(3,score)
+    
+print(a)
+    
+
+
+# In[1]:
+
+
+#SIMPLE INTEREST
+p=int(input("Enter the Principalamount:"))
+n=int(input("Enter the No.of.Years:"))
+r=float(input("Enter the rate of interest:"))
+print("SimpleInterest= ",((p*n*r)/100))
+
+
+# In[ ]:
+
+
+#TAX CALCULATION
+income=int(input("Enter the Income per Annum:  "))
+s1=income*0
+s2= ((income-200000)*(10/100))
+s3= 20000+((income-400000)*(20/100))
+s4= 60000+((income-600000)*(40/100))
+if income<200000 : 
+    it=s1
+    print(it)
+elif income <400000 and income>200000 : 
+    it=s2
+    print(it)
+elif income <600000 and income>400000 : 
+    it=s3
+    print(it)
+else : 
+    it=s4
+    print(it)
+
+
+# In[ ]:
+
+
+#MULTIPLICATION TABLE
+
+for i in range(1,11):
+    for j in range (1,11):
+        
+        print(i,"x",j,"=",(i*j))
+    print()
+
+
+# In[8]:
+
+
+#number o word array
+from array import array
+a = array ('i', range(0,9))
+x = int (input("enter a 3 digit number"))
+a [2] = int(x%10)
+a [1] = int(x/10%10)
+a [0] = int(x/100)
+for i in range (0,3):
+    if a [i] == 0:
+        print("zero",end=' ')
+    elif a [i] == 1 : 
+        print("one",end=' ')
+    elif a [i] == 2 : 
+        print("two",end=' ')
+    elif a [i] == 3 : 
+        print("three",end=' ')
+    elif a [i] == 4 : 
+        print("four",end=' ')
+    elif a [i] == 5 :
+        print("five",end=' ')
+    elif a [i] == 6 : 
+        print("six",end=' ')
+    elif a [i] == 7 : 
+        print("seven",end=' ')
+    elif a [i] == 8 : 
+        print("eight",end=' ')
+    else:
+        print("nine",end=' ')
+
+
+# In[9]:
+
+
+#number to word defined function
+def text_eq(x):
+    if x==0:
+        y="zero"
+    elif x==1:
+        y="one"
+    elif x==2:
+        y="two"
+    elif x==3:
+        y="three"
+    elif x==4:
+        y="four"
+    elif x==5:
+        y="five"
+    elif x==6:
+        y="six"
+    elif x==7:
+        y="seven"
+    elif x==8:
+        y="eight"
+    else:
+        y="nine"
+    return y
+
+i=int(input("Enter a 3 digit num: "))
+d3=int(i/100)
+print(text_eq(d3),end=' ')
+
+d2=int(i/10%10)
+print(text_eq(d2),end=' ')
+
+d1=int(i%10)
+print(text_eq(d1),end=' ')
+
+
+# In[ ]:
+
+
+#STUDENT INFORMATION LIST
+
+a=[]
+
+n=int(input("Enter Total no. of. Students"))
+
+for i in range(0,n) :
+    dno=input("Enter the name of the Student: ")
+    a.insert(0,dno)
+    dob=input("Enter the Date of Birth: ")
+    a.insert(1,dob)
+    fn=input("Enter the father name: ")
+    a.insert(2,fn)
+    score=input("Enter the Score: ")
+    a.insert(3,score)
+    
+print(a)
+
+
+# In[14]:
+
+
+dno={1:"19-UCA-013",2:"19-UCA-014",3:"19-UCA-015"}
+name={1:"Carmel",2:"Francis",3:"Divagar"}
+dob={1:"12-01-2001",2:"12-06-2000",3:"25-05-2002"}
+mobile={1:"8056045990",2:"7305487090",3:"9234568741"}
+
+for key in dno:
+    print(key, dno[key],name[key],dob[key],mobile[key])
+
