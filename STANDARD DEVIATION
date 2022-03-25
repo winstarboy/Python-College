@@ -1,0 +1,19 @@
+#STANDARD DEVIATION
+import math
+n = int(input("Enter the number of Values: "))
+weight = []
+s = 0
+for i in range(n):
+    w=0
+    weight.append(int(input("Enter the weight")))
+    s+=w
+print(weight)
+average = int(s/n)
+d =0
+for i in weight:
+    d += (i - average)**2 
+print(d)
+d = d/(n-1)
+print(d)
+sd = math.sqrt(d)
+print("The standard deviation is : {}".format(sd))
