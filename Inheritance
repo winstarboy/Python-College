@@ -1,0 +1,95 @@
+#single inheritance
+class Parent:
+  def myfun_p(self):
+      print("I'm the Parent")
+class Child(Parent):
+  def myfun_c(self):
+      print("I'm the Child")
+obj = Child()
+obj.myfun_p()
+obj.myfun_c()
+
+
+#multiple inheritance
+class Name:
+  name = ""
+def myfun1(self):
+  print(self.name)
+class Surname:
+  surname = ""
+def myfun2(self):
+  print(self.surname)
+# Multi Child class
+class Student(Name, Surname):
+  def parents(self):
+    print("Name :", self.name)
+    print("Surname :", self.surname)
+stud = Student()
+stud.name = "Lily"
+stud.surname = "Jones"
+stud.parents()
+
+#multi-level inheritance
+class Principal:
+  def principal(self):
+    print("I’m the Principal")
+class Teacher(Principal):
+  def teacher(self):
+    print("I’m a Teacher")
+class Student(Teacher):
+  def student(self):
+    print("I’m a student")
+d = Student()
+d.principal()
+d.teacher()
+d.student()
+
+#hierarchial inheritance
+# Python program to demonstrate
+# Hierarchical inheritance
+# Base class
+class HOD:
+	def func1(self):
+		print("I'm the HOD")
+
+# Derived class1
+class CO_ORDINATOR(HOD):
+	def func2(self):
+		print("I'm the co-ordinator under HOD")
+
+# Derivied class2
+class staff(HOD):
+	def func3(self):
+		print("I'm a STAFF under HOD")
+
+# Driver's code
+o1 = CO_ORDINATOR()
+o2 = staff()
+o1.func1()
+o1.func2()
+o2.func3()
+
+# Python program to demonstrate
+# hybrid inheritance
+
+
+class College:
+	def func1(self):
+		print("Loyola College")
+
+class Student1(College):
+	def func2(self):
+		print("This function is in student 1. ")
+
+class Student2(College):
+	def func3(self):
+		print("This function is in student 2.")
+
+class Student3(Student1, College):
+	def func4(self):
+		print("This function is in student 3.")
+
+# Driver's code
+o = Student3()
+o.func1()
+o.func2()
