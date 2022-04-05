@@ -1,0 +1,14 @@
+#15
+#Pandas DataFrame
+import pandas as pd
+data = {'Name':['Kewin', 'antony', 'mohan', 'bovas'],
+        'Age':[21, 20, 20, 20],
+        'Address':['Chennai', 'vartharajpetai', 'Chennai', 'chennai'],
+        'Qualification':['BCA', 'BCA', 'BCA', 'BCA'],
+        'sales':['90%','80%','75%','85%']}
+ 
+# Convert the dictionary into DataFrame 
+df = pd.DataFrame(data)
+ 
+# select two columns
+print(df[['Name','Qualification', 'Address','sales']])
